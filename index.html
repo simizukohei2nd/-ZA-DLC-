@@ -1494,12 +1494,12 @@ if (Status === "きぜつ" && Alpha === "はい") {
   num6 = 3;
 }
 
-if (Status !== "きぜつ" && C === 0||Status === "きぜつ" && C !== 0) {
+if ((Status !== "きぜつ" && C === 0)||(Status === "きぜつ" && C !== 0)) {
   error("ありえない状態です");
   return;
 }
 
-if (Rank !== "∞" && L !== 0||Rank !== "∞" && M !== 0||Rank !== "∞" && N !== 0) {
+if (Rank !== "∞" && (num12 !== 0 || num13 !== 0 || num14 !== 0)) {
   error("ありえない状態です");
   return;
 }
@@ -1517,6 +1517,7 @@ document.getElementById("result").textContent = `捕獲率[%]：${result.toFixed
 
 </body>
 </html>
+
 
 
 
