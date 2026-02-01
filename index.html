@@ -1431,9 +1431,9 @@ const N = {
   const Back = document.getElementById("I").value;
   const Alpha= document.getElementById("J").value;
   const Canari = document.getElementById("K").value;
-  const Dimension = document.getElementById("L").value || "0";;
-  const Donut = document.getElementById("M").value || "0";;
-  const Capture = document.getElementById("N").value || "0";;
+  const Dimension = document.getElementById("L").value;
+  const Donut = document.getElementById("M").value;
+  const Capture = document.getElementById("N").value;
 
   const num1 =A[Name];
   const num2 =B[Ball];
@@ -1511,7 +1511,11 @@ if(diff2 >= 0){
 } else {
   num19 = 0.1;
 }
-
+  
+if (Status === "きぜつ" && Alpha === "はい") {
+  num6 = 3;
+}
+  
 if (((300-(2*C))/300)*num1*num2*num19*num6*num7*num8*num9*num10*num11*num17 >= 255 || num2 === 255) {
  result=100.00;
 }else{
@@ -1525,4 +1529,5 @@ document.getElementById("result").textContent = `捕獲率[%]：${result.toFixed
 
 </body>
 </html>
+
 
