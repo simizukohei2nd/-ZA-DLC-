@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ポケモンレジェンズZ-A 捕獲率計算機</title>
+</head>
+<body>
+
+<p>・ポケモン名　　　　：<input list="A-list" id="A">
+<datalist id="A-list">
+<option value="チコリータ">
+<option value="ベイリーフ">
+<option value="メガニウム">
+<option value="ポカブ">
+<option value="チャオブー">
+<option value="エンブオー">
+<option value="ワニノコ">
+<option value="アリゲイツ">
+<option value="オーダイル">
+<option value="ヤヤコマ">
+<option value="ヒノヤコマ">
+<option value="ファイアロー">
+<option value="ホルビー">
+<option value="ホルード">
+<option value="コフキムシ">
+<option value="コフーライ">
+<option value="ビビヨン">
+<option value="ビードル">
+<option value="コクーン">
+<option value="スピアー">
+<option value="ポッポ">
+<option value="ピジョン">
+<option value="ピジョット">
+<option value="メリープ">
+<option value="モココ">
+<option value="デンリュウ">
+<option value="ミネズミ">
+<option value="ミルホッグ">
+<option value="スボミー">
+<option value="ロゼリア">
+<option value="ロズレイド">
+<option value="コイキング">
+<option value="ギャラドス">
+<option value="カメテテ">
+<option value="ガメノデス">
+<option value="ヒトデマン">
+<option value="スターミー">
+<option value="フラベベ">
+<option value="フラエッテ">
+<option value="フラージェス">
+<option value="メェークル">
+<option value="ゴーゴート">
+<option value="ニャスパー">
+<option value="ニャオニクス">
+<option value="シシコ">
+<option value="カエンジシ">
+<option value="ヤンチャム">
+<option value="ゴロンダ">
+<option value="ヤブクロン">
+<option value="ダストダス">
+<option value="デデンネ">
+<option value="ピチュー">
+<option value="ピカチュウ">
+<option value="ライチュウ">
+<option value="ピィ">
+<option value="ピッピ">
+<option value="ピクシー">
+<option value="イトマル">
+<option value="アリアドス">
+<option value="アーボ">
+<option value="アーボック">
+<option value="ケーシィ">
+<option value="ユンゲラー">
+<option value="フーディン">
+<option value="ゴース">
+<option value="ゴースト">
+<option value="ゲンガー">
+<option value="フシデ">
+<option value="ホイーガ">
+<option value="ペンドラー">
+<option value="ヒトツキ">
+<option value="ニダンギル">
+<option value="ギルガルド">
+<option value="マダツボミ">
+<option value="ウツドン">
+<option value="ウツボット">
+<option value="ヤナップ">
+<option value="ヤナッキー">
+<option value="バオップ">
+<option value="バオッキー">
+<option value="ヒヤップ">
+<option value="ヒヤッキー">
+<option value="アサナン">
+<option value="チャーレム">
+<option value="ラクライ">
+<option value="ライボルト">
+<option value="ラルトス">
+<option value="キルリア">
+<option value="サーナイト">
+<option value="エルレイド">
+<option value="デルビル">
+<option value="ヘルガー">
+<option value="チルット">
+<option value="チルタリス">
+<option value="タブンネ">
+<option value="シュシュプ">
+<option value="フレフワン">
+<option value="ペロッパフ">
+<option value="ペロリーム">
+<option value="イーブイ">
+<option value="シャワーズ">
+<option value="サンダース">
+<option value="ブースター">
+<option value="エーフィ">
+<option value="ブラッキー">
+<option value="リーフィア">
+<option value="グレイシア">
+<option value="ニンフィア">
+<option value="ミミロル">
+<option value="ミミロップ">
+<option value="カゲボウズ">
+<option value="ジュペッタ">
+<option value="バニプッチ">
+<option value="バニリッチ">
+<option value="バイバニラ">
+<option value="ドンメル">
+<option value="バクーダ">
+<option value="ヒポポタス">
+<option value="カバルドン">
+<option value="モグリュー">
+<option value="ドリュウズ">
+<option value="メグロコ">
+<option value="ワルビル">
+<option value="ワルビアル">
+<option value="ワンリキー">
+<option value="ゴーリキー">
+<option value="カイリキー">
+<option value="フカマル">
+<option value="ガバイト">
+<option value="ガブリアス">
+<option value="メレシー">
+<option value="ヤミラミ">
+<option value="クチート">
+<option value="アブソル">
+<option value="リオル">
+<option value="ルカリオ">
+<option value="ヤドン">
+<option value="ヤドラン">
+<option value="ヤドキング">
+<option value="キバニア">
+<option value="サメハダー">
+<option value="シビシラス">
+<option value="シビビール">
+<option value="シビルドン">
+<option value="ミニリュウ">
+<option value="ハクリュー">
+<option value="カイリュー">
+<option value="フシギダネ">
+<option value="フシギソウ">
+<option value="フシギバナ">
+<option value="ヒトカゲ">
+<option value="リザード">
+<option value="リザードン">
+<option value="ゼニガメ">
+<option value="カメール">
+<option value="カメックス">
+<option value="マッギョ">
+<option value="トリミアン">
+<option value="マーイーカ">
+<option value="カラマネロ">
+<option value="クズモー">
+<option value="ドラミドロ">
+<option value="ウデッポウ">
+<option value="ブロスター">
+<option value="ヌメラ">
+<option value="ヌメイル">
+<option value="ヌメルゴン">
+<option value="デリバード">
+<option value="ユキワラシ">
+<option value="オニゴーリ">
+<option value="ユキメノコ">
+<option value="ユキカブリ">
+<option value="ユキノオー">
+<option value="カチコール">
+<option value="クレベース">
+<option value="ストライク">
+<option value="ハッサム">
+<option value="カイロス">
+<option value="ヘラクロス">
+<option value="エモンガ">
+<option value="ルチャブル">
+<option value="ボクレー">
+<option value="オーロット">
+<option value="ズルッグ">
+<option value="ズルズキン">
+<option value="オンバット">
+<option value="オンバーン">
+<option value="クレッフィ">
+<option value="ヒトモシ">
+<option value="ランプラー">
+<option value="シャンデラ">
+<option value="プテラ">
+<option value="チゴラス">
+<option value="ガチゴラス">
+<option value="アマルス">
+<option value="アマルルガ">
+<option value="イワーク">
+<option value="ハガネール">
+<option value="ココドラ">
+<option value="コドラ">
+<option value="ボスゴドラ">
+<option value="エリキテル">
+<option value="エレザード">
+<option value="バケッチャ">
+<option value="パンプジン">
+<option value="ヨーギラス">
+<option value="サナギラス">
+<option value="バンギラス">
+<option value="ケロマツ">
+<option value="ゲコガシラ">
+<option value="ゲッコウガ">
+<option value="タイレーツ">
+<option value="ハリマロン">
+<option value="ハリボーグ">
+<option value="ブリガロン">
+<option value="エアームド">
+<option value="フォッコ">
+<option value="テールナー">
+<option value="マフォクシー">
+<option value="タツベイ">
+<option value="コモルー">
+<option value="ボーマンダ">
+<option value="ガルーラ">
+<option value="ジジーロン">
+<option value="ダンバル">
+<option value="メタング">
+<option value="メタグロス">
+<option value="ゼルネアス">
+<option value="イベルタル">
+<option value="ジガルデ">
+<option value="ディアンシー">
+<option value="ミュウツー">
+<option value="マンキー">
+<option value="オコリザル">
+<option value="コノヨザル">
+<option value="ニャース">
+<option value="ペルシアン">
+<option value="ニャイキング">
+<option value="カモネギ">
+<option value="ネギガナイト">
+<option value="カラカラ">
+<option value="ガラガラ">
+<option value="ポリゴン">
+<option value="ポリゴン２">
+<option value="ポリゴンＺ">
+<option value="カプサイジ">
+<option value="スコヴィラン">
+<option value="カヌチャン">
+<option value="ナカヌチャン">
+<option value="デカヌチャン">
+<option value="モトトカゲ">
+<option value="キラーメ">
+<option value="キラフロル">
+<option value="ロトム">
+<option value="ボチ">
+<option value="ハカドッグ">
+<option value="スナバァ">
+<option value="シロデスナ">
+<option value="カクレオン">
+<option value="カラミンゴ">
+<option value="フリージオ">
+<option value="ヘイラッシャ">
+<option value="シャリタツ">
+<option value="セビエ">
+<option value="セゴール">
+<option value="セグレイブ">
+<option value="コレクレー">
+<option value="サーフゴー">
+<option value="ハリーセン">
+<option value="ハリーマン">
+<option value="キモリ">
+<option value="ジュプトル">
+<option value="ジュカイン">
+<option value="アチャモ">
+<option value="ワカシャモ">
+<option value="バシャーモ">
+<option value="ミズゴロウ">
+<option value="ヌマクロー">
+<option value="ラグラージ">
+<option value="ヒンバス">
+<option value="ミロカロス">
+<option value="リーシャン">
+<option value="チリーン">
+<option value="イエッサン">
+<option value="チョロネコ">
+<option value="レパルダス">
+<option value="ムンナ">
+<option value="ムシャーナ">
+<option value="ナゲキ">
+<option value="ダゲキ">
+<option value="デスマス">
+<option value="デスカーン">
+<option value="デスバーン">
+<option value="コソクムシ">
+<option value="グソクムシャ">
+<option value="クスネ">
+<option value="フォクスライ">
+<option value="タタッコ">
+<option value="オトスパス">
+<option value="ミミッキュ">
+<option value="バサギリ">
+<option value="モルペコ">
+<option value="ゴビット">
+<option value="ゴルーグ">
+<option value="ココガラ">
+<option value="アオガラス">
+<option value="アーマーガア">
+<option value="ププリン">
+<option value="プリン">
+<option value="プクリン">
+<option value="パピモッチ">
+<option value="バウッツェル">
+<option value="ムックル">
+<option value="ムクバード">
+<option value="ムクホーク">
+<option value="バネブー">
+<option value="ブーピッグ">
+<option value="イキリンコ">
+<option value="マケンカニ">
+<option value="ケケンカニ">
+<option value="コジオ">
+<option value="ジオヅム">
+<option value="キョジオーン">
+<option value="ゴクリン">
+<option value="マルノーム">
+<option value="ズバット">
+<option value="ゴルバット">
+<option value="クロバット">
+<option value="カルボウ">
+<option value="グレンアルマ">
+<option value="ソウブレイズ">
+<option value="オラチフ">
+<option value="マフィティフ">
+<option value="エレズン">
+<option value="ストリンダー">
+<option value="シルシュルー">
+<option value="タギングル">
+<option value="ザングース">
+<option value="ハブネーク">
+<option value="マネネ">
+<option value="バリヤード">
+<option value="バリコオル">
+<option value="タマゲタケ">
+<option value="モロバレル">
+<option value="ヒードラン">
+<option value="ボルケニオン">
+<option value="コバルオン">
+<option value="テラキオン">
+<option value="ビリジオン">
+<option value="ケルディオ">
+<option value="メロエッタ">
+<option value="ゲノセクト">
+<option value="フーパ">
+<option value="マーシャドー">
+<option value="メルタン">
+<option value="メルメタル">
+<option value="ダークライ">
+<option value="ラティアス">
+<option value="ラティオス">
+<option value="カイオーガ">
+<option value="グラードン">
+<option value="レックウザ">
+<option value="マギアナ">
+<option value="ゼラオラ">
+</datalist>
+</p>
+<p>・ボール名　　　※１： <select id="B">
+<option value="モンスターボール">モンスターボール</option>
+<option value="スーパーボール">スーパーボール</option>
+<option value="ハイパーボール">ハイパーボール</option>
+<option value="マスターボール">マスターボール</option>
+<option value="プレミアボール">プレミアボール</option>
+<option value="ヒールボール">ヒールボール</option>
+<option value="ネットボール">ネットボール</option>
+<option value="ネストボール">ネストボール</option>
+<option value="ダイブボール">ダイブボール</option>
+<option value="ダークボール">ダークボール</option>
+<option value="タイマーボール">タイマーボール</option>
+<option value="クイックボール">クイックボール</option>
+<option value="リピートボール">リピートボール</option>
+<option value="ゴージャスボール">ゴージャスボール</option>
+<option value="スピードボール">スピードボール</option>
+<option value="フレンドボール">フレンドボール</option>
+<option value="ルアーボール">ルアーボール</option>
+<option value="レベルボール">レベルボール</option>
+<option value="ヘビーボール">ヘビーボール</option>
+<option value="ラブラブボール">ラブラブボール</option>
+<option value="ムーンボール">ムーンボール</option>
+<option value="ドリームボール">ドリームボール</option>
+<option value="ウルトラボール">ウルトラボール</option>
+<option value="サファリボール">サファリボール</option>
+<option value="コンペボール">コンペボール</option>
+</select>
+</p>
+<p>・残りHP割合［%］　 ：<input id="C" type="number" min="0" max="100" value="0">
+</p>
+<p>・ZAランク　　　　　：<select id="D">
+    <option value="∞">∞</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="F">F</option>
+    <option value="V">V</option>
+    <option value="W">W</option>
+    <option value="X">X</option>
+    <option value="Y">Y</option>
+    <option value="Z">Z</option>
+ </select>
+</p>
+<p>・相手のLv　　　　　：<input id="E" type="number" min="1" max="100" value="50">
+</p>
+<p>・状態異常　　　　　：<select id="F">
+    <option value="きぜつ">きぜつ</option>
+    <option value="なし">なし</option>
+    <option value="どく">どく</option>
+    <option value="やけど">やけど</option>
+    <option value="まひ">まひ</option>
+    <option value="ねむり">ねむり</option>
+    <option value="こおり">こおり</option>
+ </select>
+</p>
+<p>・色違い　　　　　　：<select id="G">
+    <option value="いいえ">いいえ</option>
+    <option value="はい">はい</option>
+ </select>
+</p>
+
+<p>・不意打ち　　　　　：<select id="H">
+    <option value="いいえ">いいえ</option>
+    <option value="はい">はい</option>
+ </select>
+</p>
+<p>・背面取り　　　　　：<select id="I">
+    <option value="いいえ">いいえ</option>
+    <option value="はい">はい</option>
+ </select>
+</p>
+<p>・オヤブン　　　　　：<select id="J">
+    <option value="いいえ">いいえ</option>
+    <option value="はい">はい</option>
+ </select>
+</p>
+<p>・カナリィぬい［個］  ：<select id="K">
+    <option value="3">3</option>
+    <option value="2">2</option>
+    <option value="1">1</option>
+    <option value="0">0</option>
+ </select>
+</p>
+<p>・異次元の星の数　※２：<select id="L">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+ </select>
+</p>
+<p>・ドーナツの星の数※２：<select id="M">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+ </select>
+</p>
+<p>・捕獲パワー［Lv］※２：<select id="N">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+ </select>
+</p>
+<p>・自分のLv(レベルボール用)：<input id="O" type="number" min="1" max="100" value="100">
+</p>
+<p>・ターン(タイマーボール用)：<input id="P" type="number" min="0" max="31" value="0">
+</p>
+<p>　</p>
+<p>※１ 条件付きで捕獲補正率の変動するボールは、条件が満たされているものとして計算する。</p>
+<p>　　 条件が満たされていないボールを使う際は、一律でモンスターボールを選択する。</p>
+<p>※２ 通常ミアレでは0を入力する。</p>
+<button onclick="calc()">計算</button>
+<p id="result"></p>
+
+<script>
+function toHalfWidth(str) {
+  return str.replace(/[０-９]/g, function(s) {
+    return String.fromCharCode(s.charCodeAt(0) - 0xFEE0);
+  });
+}//デバッグ全角半角修正用
+
+function error(msg) {
+  document.getElementById("result").textContent = msg;
+  return;
+}//デバッグエラー出力用
+
+function calc() {
+const HeavyBall = document.getElementById("B").value;
+const A = HeavyBall === "ヘビーボール"
+?{"チコリータ": 25,
+  "ベイリーフ": 25,
+  "メガニウム": 45,
+  "ポカブ": 25,
+  "チャオブー": 45,
+  "エンブオー": 75,
+  "ワニノコ": 25,
+  "アリゲイツ": 25,
+  "オーダイル": 65,
+  "ヤヤコマ": 235,
+  "ヒノヤコマ": 100,
+  "ファイアロー": 25,
+  "ホルビー": 230,
+  "ホルード": 127,
+  "コフキムシ": 235,
+  "コフーライ": 100,
+  "ビビヨン": 25,
+  "ビードル": 235,
+  "コクーン": 100,
+  "スピアー": 25,
+  "ポッポ": 235,
+  "ピジョン": 100,
+  "ピジョット": 25,
+  "メリープ": 184,
+  "モココ": 100,
+  "デンリュウ": 45,
+  "ミネズミ": 230,
+  "ミルホッグ": 230,
+  "スボミー": 235,
+  "ロゼリア": 130,
+  "ロズレイド": 55,
+  "コイキング": 705,
+  "ギャラドス": 65,
+  "カメテテ": 100,
+  "ガメノデス": 65,
+  "ヒトデマン": 205,
+  "スターミー": 40,
+  "フラベベ": 205,
+  "フラエッテ": 100,
+  "フラージェス": 25,
+  "メェークル": 180,
+  "ゴーゴート": 45,
+  "ニャスパー": 170,
+  "ニャオニクス": 55,
+  "シシコ": 200,
+  "カエンジシ": 65,
+  "ヤンチャム": 200,
+  "ゴロンダ": 65,
+  "ヤブクロン": 170,
+  "ダストダス": 60,
+  "デデンネ": 160,
+  "ピチュー": 170,
+  "ピカチュウ": 170,
+  "ライチュウ": 55,
+  "ピィ": 130,
+  "ピッピ": 130,
+  "ピクシー": 5,
+  "イトマル": 230,
+  "アリアドス": 70,
+  "アーボ": 230,
+  "アーボック": 90,
+  "ケーシィ": 180,
+  "ユンゲラー": 80,
+  "フーディン": 30,
+  "ゴース": 170,
+  "ゴースト": 70,
+  "ゲンガー": 25,
+  "フシデ": 230,
+  "ホイーガ": 100,
+  "ペンドラー": 45,
+  "ヒトツキ": 160,
+  "ニダンギル": 70,
+  "ギルガルド": 65,
+  "マダツボミ": 230,
+  "ウツドン": 100,
+  "ウツボット": 25,
+  "ヤナップ": 170,
+  "ヤナッキー": 55,
+  "バオップ": 170,
+  "バオッキー": 55,
+  "ヒヤップ": 170,
+  "ヒヤッキー": 55,
+  "アサナン": 160,
+  "チャーレム": 70,
+  "ラクライ": 100,
+  "ライボルト": 25,
+  "ラルトス": 215,
+  "キルリア": 100,
+  "サーナイト": 25,
+  "エルレイド": 25,
+  "デルビル": 100,
+  "ヘルガー": 25,
+  "チルット": 230,
+  "チルタリス": 25,
+  "タブンネ": 230,
+  "シュシュプ": 180,
+  "フレフワン": 120,
+  "ペロッパフ": 180,
+  "ペロリーム": 120,
+  "イーブイ": 25,
+  "シャワーズ": 25,
+  "サンダース": 25,
+  "ブースター": 25,
+  "エーフィ": 25,
+  "ブラッキー": 25,
+  "リーフィア": 25,
+  "グレイシア": 25,
+  "ニンフィア": 25,
+  "ミミロル": 170,
+  "ミミロップ": 40,
+  "カゲボウズ": 205,
+  "ジュペッタ": 25,
+  "バニプッチ": 230,
+  "バニリッチ": 100,
+  "バイバニラ": 25,
+  "ドンメル": 230,
+  "バクーダ": 150,
+  "ヒポポタス": 120,
+  "カバルドン": 90,
+  "モグリュー": 100,
+  "ドリュウズ": 60,
+  "メグロコ": 160,
+  "ワルビル": 70,
+  "ワルビアル": 65,
+  "ワンリキー": 160,
+  "ゴーリキー": 70,
+  "カイリキー": 45,
+  "フカマル": 25,
+  "ガバイト": 25,
+  "ガブリアス": 65,
+  "メレシー": 40,
+  "ヤミラミ": 70,
+  "クチート": 25,
+  "アブソル": 10,
+  "リオル": 55,
+  "ルカリオ": 25,
+  "ヤドン": 170,
+  "ヤドラン": 75,
+  "ヤドキング": 70,
+  "キバニア": 205,
+  "サメハダー": 60,
+  "シビシラス": 170,
+  "シビビール": 40,
+  "シビルドン": 30,
+  "ミニリュウ": 25,
+  "ハクリュー": 25,
+  "カイリュー": 65,
+  "フシギダネ": 25,
+  "フシギソウ": 25,
+  "フシギバナ": 65,
+  "ヒトカゲ": 25,
+  "リザード": 25,
+  "リザードン": 45,
+  "ゼニガメ": 25,
+  "カメール": 25,
+  "カメックス": 65,
+  "マッギョ": 55,
+  "トリミアン": 140,
+  "マーイーカ": 170,
+  "カラマネロ": 80,
+  "クズモー": 205,
+  "ドラミドロ": 35,
+  "ウデッポウ": 205,
+  "ブロスター": 35,
+  "ヌメラ": 25,
+  "ヌメイル": 25,
+  "ヌメルゴン": 45,
+  "デリバード": 25,
+  "ユキワラシ": 170,
+  "オニゴーリ": 75,
+  "ユキメノコ": 55,
+  "ユキカブリ": 100,
+  "ユキノオー": 80,
+  "カチコール": 170,
+  "クレベース": 85,
+  "ストライク": 25,
+  "ハッサム": 25,
+  "カイロス": 45,
+  "ヘラクロス": 45,
+  "エモンガ": 180,
+  "ルチャブル": 80,
+  "ボクレー": 100,
+  "オーロット": 60,
+  "ズルッグ": 160,
+  "ズルズキン": 70,
+  "オンバット": 170,
+  "オンバーン": 25,
+  "クレッフィ": 55,
+  "ヒトモシ": 170,
+  "ランプラー": 70,
+  "シャンデラ": 25,
+  "プテラ": 45,
+  "チゴラス": 25,
+  "ガチゴラス": 65,
+  "アマルス": 25,
+  "アマルルガ": 65,
+  "イワーク": 45,
+  "ハガネール": 55,
+  "ココドラ": 160,
+  "コドラ": 90,
+  "ボスゴドラ": 75,
+  "エリキテル": 170,
+  "エレザード": 55,
+  "バケッチャ": 100,
+  "パンプジン": 60,
+  "ヨーギラス": 25,
+  "サナギラス": 65,
+  "バンギラス": 75,
+  "ケロマツ": 25,
+  "ゲコガシラ": 25,
+  "ゲッコウガ": 25,
+  "タイレーツ": 25,
+  "ハリマロン": 25,
+  "ハリボーグ": 25,
+  "ブリガロン": 65,
+  "エアームド": 25,
+  "フォッコ": 25,
+  "テールナー": 25,
+  "マフォクシー": 25,
+  "タツベイ": 25,
+  "コモルー": 45,
+  "ボーマンダ": 65,
+  "ガルーラ": 45,
+  "ジジーロン": 50,
+  "ダンバル": 1,
+  "メタング": 20,
+  "メタグロス": 50,
+  "ゼルネアス": 65,
+  "イベルタル": 65,
+  "ジガルデ": 855,
+  "ディアンシー": 1,
+  "ミュウツー": 40,
+  "マンキー": 170,
+  "オコリザル": 55,
+  "コノヨザル": 25,
+  "ニャース": 235,
+  "ペルシアン": 70,
+  "ニャイキング": 90,
+  "カモネギ": 25,
+  "ネギガナイト": 45,
+  "カラカラ": 170,
+  "ガラガラ": 55,
+  "ポリゴン": 25,
+  "ポリゴン２": 25,
+  "ポリゴンＺ": 10,
+  "カプサイジ": 170,
+  "スコヴィラン": 55,
+  "カヌチャン": 170,
+  "ナカヌチャン": 70,
+  "デカヌチャン": 45,
+  "モトトカゲ": 170,
+  "キラーメ": 50,
+  "キラフロル": 25,
+  "ロトム": 25,
+  "ボチ": 100,
+  "ハカドッグ": 60,
+  "スナバァ": 120,
+  "シロデスナ": 90,
+  "カクレオン": 180,
+  "カラミンゴ": 80,
+  "フリージオ": 25,
+  "ヘイラッシャ": 55,
+  "シャリタツ": 80,
+  "セビエ": 25,
+  "セゴール": 5,
+  "セグレイブ": 50,
+  "コレクレー": 25,
+  "サーフゴー": 75,
+  "ハリーセン": 25,
+  "ハリーマン": 45,
+  "キモリ": 25,
+  "ジュプトル": 25,
+  "ジュカイン": 25,
+  "アチャモ": 25,
+  "ワカシャモ": 25,
+  "バシャーモ": 45,
+  "ミズゴロウ": 25,
+  "ヌマクロー": 25,
+  "ラグラージ": 65,
+  "ヒンバス": 235,
+  "ミロカロス": 60,
+  "リーシャン": 100,
+  "チリーン": 25,
+  "イエッサン": 10,
+  "チョロネコ": 235,
+  "レパルダス": 70,
+  "ムンナ": 170,
+  "ムシャーナ": 75,
+  "ナゲキ": 45,
+  "ダゲキ": 45,
+  "デスマス": 170,
+  "デスカーン": 110,
+  "デスバーン": 90,
+  "コソクムシ": 70,
+  "グソクムシャ": 45,
+  "クスネ": 235,
+  "フォクスライ": 107,
+  "タタッコ": 160,
+  "オトスパス": 45,
+  "ミミッキュ": 25,
+  "バサギリ": 20,
+  "モルペコ": 160,
+  "ゴビット": 170,
+  "ゴルーグ": 120,
+  "ココガラ": 235,
+  "アオガラス": 100,
+  "アーマーガア": 45,
+  "ププリン": 150,
+  "プリン": 150,
+  "プクリン": 30,
+  "パピモッチ": 170,
+  "バウッツェル": 70,
+  "ムックル": 235,
+  "ムクバード": 100,
+  "ムクホーク": 45,
+  "バネブー": 235,
+  "ブーピッグ": 60,
+  "イキリンコ": 170,
+  "マケンカニ": 205,
+  "ケケンカニ": 60,
+  "コジオ": 235,
+  "ジオヅム": 120,
+  "キョジオーン": 75,
+  "ゴクリン": 205,
+  "マルノーム": 75,
+  "ズバット": 235,
+  "ゴルバット": 70,
+  "クロバット": 70,
+  "カルボウ": 70,
+  "グレンアルマ": 5,
+  "ソウブレイズ": 5,
+  "オラチフ": 130,
+  "マフィティフ": 75,
+  "エレズン": 55,
+  "ストリンダー": 45,
+  "シルシュルー": 170,
+  "タギングル": 90,
+  "ザングース": 70,
+  "ハブネーク": 90,
+  "マネネ": 125,
+  "バリヤード": 25,
+  "バリコオル": 45,
+  "タマゲタケ": 170,
+  "モロバレル": 75,
+  "ヒードラン": 75,
+  "ボルケニオン": 45,
+  "コバルオン": 65,
+  "テラキオン": 65,
+  "ビリジオン": 65,
+  "ケルディオ": 45,
+  "メロエッタ": 25,
+  "ゲノセクト": 65,
+  "フーパ": 25,
+  "マーシャドー": 25,
+  "メルタン": 25,
+  "メルメタル": 75,
+  "ダークライ": 65,
+  "ラティアス": 65,
+  "ラティオス": 65,
+  "カイオーガ": 75,
+  "グラードン": 75,
+  "レックウザ": 65,
+  "マギアナ": 25,
+  "ゼラオラ": 25
+}:{
+  "チコリータ": 45,
+  "ベイリーフ": 45,
+  "メガニウム": 45,
+  "ポカブ": 45,
+  "チャオブー": 45,
+  "エンブオー": 45,
+  "ワニノコ": 45,
+  "アリゲイツ": 45,
+  "オーダイル": 45,
+  "ヤヤコマ": 255,
+  "ヒノヤコマ": 120,
+  "ファイアロー": 45,
+  "ホルビー": 250,
+  "ホルード": 127,
+  "コフキムシ": 255,
+  "コフーライ": 120,
+  "ビビヨン": 45,
+  "ビードル": 255,
+  "コクーン": 120,
+  "スピアー": 45,
+  "ポッポ": 255,
+  "ピジョン": 120,
+  "ピジョット": 45,
+  "メリープ": 204,
+  "モココ": 120,
+  "デンリュウ": 45,
+  "ミネズミ": 250,
+  "ミルホッグ": 250,
+  "スボミー": 255,
+  "ロゼリア": 150,
+  "ロズレイド": 75,
+  "コイキング": 765,
+  "ギャラドス": 45,
+  "カメテテ": 120,
+  "ガメノデス": 45,
+  "ヒトデマン": 225,
+  "スターミー": 60,
+  "フラベベ": 225,
+  "フラエッテ": 120,
+  "フラージェス": 45,
+  "メェークル": 200,
+  "ゴーゴート": 45,
+  "ニャスパー": 190,
+  "ニャオニクス": 75,
+  "シシコ": 220,
+  "カエンジシ": 65,
+  "ヤンチャム": 220,
+  "ゴロンダ": 65,
+  "ヤブクロン": 190,
+  "ダストダス": 60,
+  "デデンネ": 180,
+  "ピチュー": 190,
+  "ピカチュウ": 190,
+  "ライチュウ": 75,
+  "ピィ": 150,
+  "ピッピ": 150,
+  "ピクシー": 25,
+  "イトマル": 250,
+  "アリアドス": 90,
+  "アーボ": 250,
+  "アーボック": 90,
+  "ケーシィ": 200,
+  "ユンゲラー": 100,
+  "フーディン": 50,
+  "ゴース": 190,
+  "ゴースト": 90,
+  "ゲンガー": 45,
+  "フシデ": 250,
+  "ホイーガ": 120,
+  "ペンドラー": 45,
+  "ヒトツキ": 180,
+  "ニダンギル": 90,
+  "ギルガルド": 45,
+  "マダツボミ": 250,
+  "ウツドン": 120,
+  "ウツボット": 45,
+  "ヤナップ": 190,
+  "ヤナッキー": 75,
+  "バオップ": 190,
+  "バオッキー": 75,
+  "ヒヤップ": 190,
+  "ヒヤッキー": 75,
+  "アサナン": 180,
+  "チャーレム": 90,
+  "ラクライ": 120,
+  "ライボルト": 45,
+  "ラルトス": 235,
+  "キルリア": 120,
+  "サーナイト": 45,
+  "エルレイド": 45,
+  "デルビル": 120,
+  "ヘルガー": 45,
+  "チルット": 250,
+  "チルタリス": 45,
+  "タブンネ": 250,
+  "シュシュプ": 200,
+  "フレフワン": 140,
+  "ペロッパフ": 200,
+  "ペロリーム": 140,
+  "イーブイ": 45,
+  "シャワーズ": 45,
+  "サンダース": 45,
+  "ブースター": 45,
+  "エーフィ": 45,
+  "ブラッキー": 45,
+  "リーフィア": 45,
+  "グレイシア": 45,
+  "ニンフィア": 45,
+  "ミミロル": 190,
+  "ミミロップ": 60,
+  "カゲボウズ": 225,
+  "ジュペッタ": 45,
+  "バニプッチ": 250,
+  "バニリッチ": 120,
+  "バイバニラ": 45,
+  "ドンメル": 250,
+  "バクーダ": 150,
+  "ヒポポタス": 140,
+  "カバルドン": 60,
+  "モグリュー": 120,
+  "ドリュウズ": 60,
+  "メグロコ": 180,
+  "ワルビル": 90,
+  "ワルビアル": 45,
+  "ワンリキー": 180,
+  "ゴーリキー": 90,
+  "カイリキー": 45,
+  "フカマル": 45,
+  "ガバイト": 45,
+  "ガブリアス": 45,
+  "メレシー": 60,
+  "ヤミラミ": 90,
+  "クチート": 45,
+  "アブソル": 30,
+  "リオル": 75,
+  "ルカリオ": 45,
+  "ヤドン": 190,
+  "ヤドラン": 75,
+  "ヤドキング": 70,
+  "キバニア": 225,
+  "サメハダー": 60,
+  "シビシラス": 190,
+  "シビビール": 60,
+  "シビルドン": 30,
+  "ミニリュウ": 45,
+  "ハクリュー": 45,
+  "カイリュー": 45,
+  "フシギダネ": 45,
+  "フシギソウ": 45,
+  "フシギバナ": 45,
+  "ヒトカゲ": 45,
+  "リザード": 45,
+  "リザードン": 45,
+  "ゼニガメ": 45,
+  "カメール": 45,
+  "カメックス": 45,
+  "マッギョ": 75,
+  "トリミアン": 160,
+  "マーイーカ": 190,
+  "カラマネロ": 80,
+  "クズモー": 225,
+  "ドラミドロ": 55,
+  "ウデッポウ": 225,
+  "ブロスター": 55,
+  "ヌメラ": 45,
+  "ヌメイル": 45,
+  "ヌメルゴン": 45,
+  "デリバード": 45,
+  "ユキワラシ": 190,
+  "オニゴーリ": 75,
+  "ユキメノコ": 75,
+  "ユキカブリ": 120,
+  "ユキノオー": 60,
+  "カチコール": 190,
+  "クレベース": 55,
+  "ストライク": 45,
+  "ハッサム": 25,
+  "カイロス": 45,
+  "ヘラクロス": 45,
+  "エモンガ": 200,
+  "ルチャブル": 100,
+  "ボクレー": 120,
+  "オーロット": 60,
+  "ズルッグ": 180,
+  "ズルズキン": 90,
+  "オンバット": 190,
+  "オンバーン": 45,
+  "クレッフィ": 75,
+  "ヒトモシ": 190,
+  "ランプラー": 90,
+  "シャンデラ": 45,
+  "プテラ": 45,
+  "チゴラス": 45,
+  "ガチゴラス": 45,
+  "アマルス": 45,
+  "アマルルガ": 45,
+  "イワーク": 45,
+  "ハガネール": 25,
+  "ココドラ": 180,
+  "コドラ": 90,
+  "ボスゴドラ": 45,
+  "エリキテル": 190,
+  "エレザード": 75,
+  "バケッチャ": 120,
+  "パンプジン": 60,
+  "ヨーギラス": 45,
+  "サナギラス": 45,
+  "バンギラス": 45,
+  "ケロマツ": 45,
+  "ゲコガシラ": 45,
+  "ゲッコウガ": 45,
+  "タイレーツ": 45,
+  "ハリマロン": 45,
+  "ハリボーグ": 45,
+  "ブリガロン": 45,
+  "エアームド": 25,
+  "フォッコ": 45,
+  "テールナー": 45,
+  "マフォクシー": 45,
+  "タツベイ": 45,
+  "コモルー": 45,
+  "ボーマンダ": 45,
+  "ガルーラ": 45,
+  "ジジーロン": 70,
+  "ダンバル": 20,
+  "メタング": 20,
+  "メタグロス": 20,
+  "ゼルネアス": 45,
+  "イベルタル": 45,
+  "ジガルデ": 765,
+  "ディアンシー": 20,
+  "ミュウツー": 20,
+  "マンキー": 190,
+  "オコリザル": 75,
+  "コノヨザル": 45,
+  "ニャース": 255,
+  "ペルシアン": 90,
+  "ニャイキング": 90,
+  "カモネギ": 45,
+  "ネギガナイト": 45,
+  "カラカラ": 190,
+  "ガラガラ": 75,
+  "ポリゴン": 45,
+  "ポリゴン２": 45,
+  "ポリゴンＺ": 30,
+  "カプサイジ": 190,
+  "スコヴィラン": 75,
+  "カヌチャン": 190,
+  "ナカヌチャン": 90,
+  "デカヌチャン": 45,
+  "モトトカゲ": 190,
+  "キラーメ": 70,
+  "キラフロル": 25,
+  "ロトム": 45,
+  "ボチ": 120,
+  "ハカドッグ": 60,
+  "スナバァ": 140,
+  "シロデスナ": 60,
+  "カクレオン": 200,
+  "カラミンゴ": 100,
+  "フリージオ": 25,
+  "ヘイラッシャ": 25,
+  "シャリタツ": 100,
+  "セビエ": 45,
+  "セゴール": 25,
+  "セグレイブ": 20,
+  "コレクレー": 45,
+  "サーフゴー": 45,
+  "ハリーセン": 45,
+  "ハリーマン": 45,
+  "キモリ": 45,
+  "ジュプトル": 45,
+  "ジュカイン": 45,
+  "アチャモ": 45,
+  "ワカシャモ": 45,
+  "バシャーモ": 45,
+  "ミズゴロウ": 45,
+  "ヌマクロー": 45,
+  "ラグラージ": 45,
+  "ヒンバス": 255,
+  "ミロカロス": 60,
+  "リーシャン": 120,
+  "チリーン": 45,
+  "イエッサン": 30,
+  "チョロネコ": 255,
+  "レパルダス": 90,
+  "ムンナ": 190,
+  "ムシャーナ": 75,
+  "ナゲキ": 45,
+  "ダゲキ": 45,
+  "デスマス": 190,
+  "デスカーン": 90,
+  "デスバーン": 90,
+  "コソクムシ": 90,
+  "グソクムシャ": 45,
+  "クスネ": 255,
+  "フォクスライ": 127,
+  "タタッコ": 180,
+  "オトスパス": 45,
+  "ミミッキュ": 45,
+  "バサギリ": 20,
+  "モルペコ": 180,
+  "ゴビット": 190,
+  "ゴルーグ": 90,
+  "ココガラ": 255,
+  "アオガラス": 120,
+  "アーマーガア": 45,
+  "ププリン": 170,
+  "プリン": 170,
+  "プクリン": 50,
+  "パピモッチ": 190,
+  "バウッツェル": 90,
+  "ムックル": 255,
+  "ムクバード": 120,
+  "ムクホーク": 45,
+  "バネブー": 255,
+  "ブーピッグ": 60,
+  "イキリンコ": 190,
+  "マケンカニ": 225,
+  "ケケンカニ": 60,
+  "コジオ": 255,
+  "ジオヅム": 120,
+  "キョジオーン": 45,
+  "ゴクリン": 225,
+  "マルノーム": 75,
+  "ズバット": 255,
+  "ゴルバット": 90,
+  "クロバット": 90,
+  "カルボウ": 90,
+  "グレンアルマ": 25,
+  "ソウブレイズ": 25,
+  "オラチフ": 150,
+  "マフィティフ": 75,
+  "エレズン": 75,
+  "ストリンダー": 45,
+  "シルシュルー": 190,
+  "タギングル": 90,
+  "ザングース": 90,
+  "ハブネーク": 90,
+  "マネネ": 145,
+  "バリヤード": 45,
+  "バリコオル": 45,
+  "タマゲタケ": 190,
+  "モロバレル": 75,
+  "ヒードラン": 45,
+  "ボルケニオン": 45,
+  "コバルオン": 45,
+  "テラキオン": 45,
+  "ビリジオン": 45,
+  "ケルディオ": 45,
+  "メロエッタ": 45,
+  "ゲノセクト": 45,
+  "フーパ": 45,
+  "マーシャドー": 45,
+  "メルタン": 45,
+  "メルメタル": 45,
+  "ダークライ": 45,
+  "ラティアス": 45,
+  "ラティオス": 45,
+  "カイオーガ": 45,
+  "グラードン": 45,
+  "レックウザ": 45,
+  "マギアナ": 45,
+  "ゼラオラ": 45
+};
+
+ let inputE = document.getElementById("E").value;
+ inputE = toHalfWidth(inputE);
+const E = Number(inputE);
+if (!Number.isInteger(E) || E < 1 || E > 100) {
+ error("対応していない数値が入力されました");
+  return;
+}
+
+ let inputO = document.getElementById("O").value || "1";
+ inputO = toHalfWidth(inputO);
+const O = Number(inputO);
+if (!Number.isInteger(O) || O < 1 || O > 100) {
+ error("対応していない数値が入力されました");
+  return;
+}
+
+let level;
+if (O/E <= 1) {
+  level = 1;
+} else if (O/E > 1 && O/E <= 2) {
+  level = 2;
+} else if (O/E > 2 && O/E <= 4) {
+  level = 4;
+} else {
+  level = 8;
+}
+
+ let inputP = document.getElementById("P").value || "0";
+ inputP = toHalfWidth(inputP);
+const P = Number(inputP);
+if (!Number.isInteger(P) || P < 0) {
+ error("対応していない数値が入力されました");
+  return;
+}
+
+let timer;
+if (P === 0) {
+  timer = 1;
+} else if (P > 0 && P <= 10) {
+  timer = 2;
+} else if (P > 10 && P <= 20) {
+  timer = 3;
+} else if (P > 20 && P <= 30) {
+  timer = 4;
+} else {
+  timer = 5;
+}
+
+const B = {
+  "モンスターボール": 1,
+  "スーパーボール": 1.5,
+  "ハイパーボール": 2,
+  "マスターボール": 255,
+  "サファリボール": 1,
+  "ネットボール": 3.5,
+  "ダイブボール": 3.5,
+  "リピートボール": 3.5,
+  "ゴージャスボール": 1,
+  "プレミアボール": 1,
+  "ダークボール": 3,
+  "ヒールボール": 1,
+  "クイックボール": 3,
+  "コンペボール": 1,
+  "ドリームボール": 4,
+  "ウルトラボール": 0.1,
+  "ルアーボール": 3.5,
+  "ムーンボール": 4,
+  "フレンドボール": 1,
+  "ラブラブボール": 8,
+  "ヘビーボール": 1,
+  "スピードボール": 1,
+  "ネストボール": Math.max(1, (41 - E) / 10),
+  "レベルボール": level,
+  "タイマーボール": timer
+};
+
+ let inputC = document.getElementById("C").value;
+ inputC = toHalfWidth(inputC);
+const C = Number(inputC);
+if (!Number.isInteger(C) || C < 0 || C > 100) {
+ error("対応していない数値が入力されました");
+  return;
+}
+
+const D = {
+  "∞": 10,
+  "A": 10,
+  "B": 9,
+  "C": 8,
+  "D": 7,
+  "E": 6,
+  "F": 5,
+  "V": 4,
+  "W": 3,
+  "X": 2,
+  "Y": 1,
+  "Z": 1
+};
+
+const F = {
+  "なし": 1,
+  "どく": 1.2,
+  "やけど": 1.2,
+  "まひ": 1.2,
+  "ねむり": 1.5,
+  "こおり": 1.5,
+  "きぜつ": 1.2
+};
+
+const G = {
+  "はい": 3,
+  "いいえ": 1
+};
+
+const H = {
+  "はい": 1.5,
+  "いいえ": 1
+};
+
+const I = {
+  "はい": 2,
+  "いいえ": 1
+};
+
+const J = {
+  "はい": 0.5,
+  "いいえ": 1
+};
+
+const K = {
+  "0": 1,
+  "1": 1.1,
+  "2": 1.2,
+  "3": 1.35,
+  "０": 1,
+  "１": 1.1,
+  "２": 1.2,
+  "３": 1.35
+};
+
+const L = {
+  "0": 0,
+  "1": 1,
+  "2": 2,
+  "3": 3,
+  "4": 4,
+  "5": 5,
+  "０": 0,
+  "１": 1,
+  "２": 2,
+  "３": 3,
+  "４": 4,
+  "５": 5
+};
+
+const M = {
+  "0": 0,
+  "1": 1,
+  "2": 2,
+  "3": 3,
+  "4": 4,
+  "5": 5,
+  "０": 0,
+  "１": 1,
+  "２": 2,
+  "３": 3,
+  "４": 4,
+  "５": 5
+};
+
+const N = {
+  "0": 0,
+  "1": 10,
+  "2": 20,
+  "3": 30,
+  "０": 0,
+  "１": 10,
+  "２": 20,
+  "３": 30
+};
+
+  const Name = document.getElementById("A").value;
+  const Ball = document.getElementById("B").value;
+  const Rank = document.getElementById("D").value;
+  const Status = document.getElementById("F").value;
+  const Shiny = document.getElementById("G").value;
+  const Supprise = document.getElementById("H").value;
+  const Back = document.getElementById("I").value;
+  const Alpha= document.getElementById("J").value;
+  const Canari = document.getElementById("K").value;
+  const Dimension = document.getElementById("L").value || "0";;
+  const Donut = document.getElementById("M").value || "0";;
+  const Capture = document.getElementById("N").value || "0";;
+
+  const num1 =A[Name];
+  const num2 =B[Ball];
+  const num3 =C;
+  const num4 =D[Rank];
+  const num5 =E;
+  const num6 =F[Status];
+  const num7 =G[Shiny];
+  const num8 =H[Supprise];
+  const num9 =I[Back];
+  const num10 =J[Alpha];
+  const num11 =K[Canari];
+  const num12 =L[Dimension];
+  const num13 =M[Donut];
+  const num14 =N[Capture];
+  const num15 =O;
+  const num16 =P;
+
+const nums = [
+  num1, num2, num3, num4, num5, num6, num7,
+  num8, num9, num10, num11
+];
+
+const hasError = nums.some(v =>
+  v === undefined || Number.isNaN(v)
+);
+if (hasError) {
+  error("対応していない文字が入力されました");
+  return;
+}
+
+let num17;
+let diff = num12- num13;
+if(diff >=2){
+  num17 = 0.3;
+}else if (diff >=1) {
+  num17 = 0.9;
+}else{
+  num17 = 1;
+}
+
+let num18;
+if(E >= 1 && E <= 15){
+  num18 = 1;
+}else if (E >= 16 && E <= 20) {
+  num18 = 2;
+}else if (E >= 21 && E <= 25) {
+  num18 = 3;
+}else if (E >= 26 && E <= 30) {
+  num18 = 4;
+}else if (E >= 31 && E <= 40) {
+  num18 = 5;
+}else if (E >= 41 && E <= 45) {
+  num18 = 6;
+}else if (E >= 46 && E <= 50) {
+  num18 = 7;
+}else if (E >= 51 && E <= 55) {
+  num18 = 8;
+}else if (E >= 56 && E <= 65) {
+  num18 = 9;
+}else {
+  num18 = 10;
+}
+
+let num19;
+let diff2 = num4- num18;
+if(diff2 >= 0){
+  num19 = 1;
+}else if (diff2 === -1 ) {
+  num19 = 0.7;
+}else if (diff2 === -2 ) {
+  num19 = 0.5;
+}else if (diff2 === -3 ) {
+  num19 = 0.3;
+} else {
+  num19 = 0.1;
+}
+
+if (((300-(2*C))/300)*num1*num2*num19*num6*num7*num8*num9*num10*num11*num17 >= 255 || num2 === 255) {
+ result=100.00;
+}else{
+ result=(1-(1-(65535-(65536-(((300-(2*C))/300)*num1*num2*num19*num6*num7*num8*num9*num10*num11*num17+1)**2))/65536)**3)*100+num14;
+}
+
+document.getElementById("result").textContent = `捕獲率[%]：${result.toFixed(2)}`;
+};
+
+</script>
+
+</body>
+</html>
