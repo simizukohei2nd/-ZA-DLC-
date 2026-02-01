@@ -372,35 +372,35 @@
 <option value="レックウザ">
 <option value="マギアナ">
 <option value="ゼラオラ">
-</datalist>
+ </datalist>
 </p>
 <p>・ボール名　　　※１： <select id="B">
-<option value="モンスターボール">モンスターボール</option>
-<option value="スーパーボール">スーパーボール</option>
-<option value="ハイパーボール">ハイパーボール</option>
-<option value="マスターボール">マスターボール</option>
-<option value="プレミアボール">プレミアボール</option>
-<option value="ヒールボール">ヒールボール</option>
-<option value="ネットボール">ネットボール</option>
-<option value="ネストボール">ネストボール</option>
-<option value="ダイブボール">ダイブボール</option>
-<option value="ダークボール">ダークボール</option>
-<option value="タイマーボール">タイマーボール</option>
-<option value="クイックボール">クイックボール</option>
-<option value="リピートボール">リピートボール</option>
-<option value="ゴージャスボール">ゴージャスボール</option>
-<option value="スピードボール">スピードボール</option>
-<option value="フレンドボール">フレンドボール</option>
-<option value="ルアーボール">ルアーボール</option>
-<option value="レベルボール">レベルボール</option>
-<option value="ヘビーボール">ヘビーボール</option>
-<option value="ラブラブボール">ラブラブボール</option>
-<option value="ムーンボール">ムーンボール</option>
-<option value="ドリームボール">ドリームボール</option>
-<option value="ウルトラボール">ウルトラボール</option>
-<option value="サファリボール">サファリボール</option>
-<option value="コンペボール">コンペボール</option>
-</select>
+    <option value="モンスターボール">モンスターボール</option>
+    <option value="スーパーボール">スーパーボール</option>
+    <option value="ハイパーボール">ハイパーボール</option>
+    <option value="マスターボール">マスターボール</option>
+    <option value="プレミアボール">プレミアボール</option>
+    <option value="ヒールボール">ヒールボール</option>
+    <option value="ネットボール">ネットボール</option>
+    <option value="ネストボール">ネストボール</option>
+    <option value="ダイブボール">ダイブボール</option>
+    <option value="ダークボール">ダークボール</option>
+    <option value="タイマーボール">タイマーボール</option>
+    <option value="クイックボール">クイックボール</option>
+    <option value="リピートボール">リピートボール</option>
+    <option value="ゴージャスボール">ゴージャスボール</option>
+    <option value="スピードボール">スピードボール</option>
+    <option value="フレンドボール">フレンドボール</option>
+    <option value="ルアーボール">ルアーボール</option>
+    <option value="レベルボール">レベルボール</option>
+    <option value="ヘビーボール">ヘビーボール</option>
+    <option value="ラブラブボール">ラブラブボール</option>
+    <option value="ムーンボール">ムーンボール</option>
+    <option value="ドリームボール">ドリームボール</option>
+    <option value="ウルトラボール">ウルトラボール</option>
+    <option value="サファリボール">サファリボール</option>
+    <option value="コンペボール">コンペボール</option>
+ </select>
 </p>
 <p>・残りHP割合［%］　 ：<input id="C" type="number" min="0" max="100" value="0">
 </p>
@@ -504,7 +504,7 @@ function toHalfWidth(str) {
 
 function error(msg) {
   document.getElementById("result").textContent = msg;
-  return;
+    return;
 }//デバッグエラー出力用
 
 function calc() {
@@ -1241,19 +1241,19 @@ const A = HeavyBall === "ヘビーボール"
   "ゼラオラ": 45
 };
 
- let inputE = document.getElementById("E").value;
- inputE = toHalfWidth(inputE);
+let inputE = document.getElementById("E").value;
+inputE = toHalfWidth(inputE);
 const E = Number(inputE);
 if (!Number.isInteger(E) || E < 1 || E > 100) {
- error("対応していない数値が入力されました");
+  error("対応していない数値が入力されました");
   return;
 }
 
- let inputO = document.getElementById("O").value || "1";
- inputO = toHalfWidth(inputO);
+let inputO = document.getElementById("O").value || "1";
+inputO = toHalfWidth(inputO);
 const O = Number(inputO);
 if (!Number.isInteger(O) || O < 1 || O > 100) {
- error("対応していない数値が入力されました");
+  error("対応していない数値が入力されました");
   return;
 }
 
@@ -1317,11 +1317,11 @@ const B = {
   "タイマーボール": timer
 };
 
- let inputC = document.getElementById("C").value;
- inputC = toHalfWidth(inputC);
+let inputC = document.getElementById("C").value;
+inputC = toHalfWidth(inputC);
 const C = Number(inputC);
 if (!Number.isInteger(C) || C < 0 || C > 100) {
- error("対応していない数値が入力されました");
+  error("対応していない数値が入力されました");
   return;
 }
 
@@ -1437,9 +1437,7 @@ const nums = [
   num8, num9, num10, num11
 ];
 
-const hasError = nums.some(v =>
-  v === undefined || Number.isNaN(v)
-);
+const hasError = nums.some(v =>  v === undefined || Number.isNaN(v));
 if (hasError) {
   error("対応していない文字が入力されました");
   return;
@@ -1497,14 +1495,19 @@ if (Status === "きぜつ" && Alpha === "はい") {
 }
 
 if (Status !== "きぜつ" && C === 0||Status === "きぜつ" && C !== 0) {
- error("ありえない状態です");
+  error("ありえない状態です");
+  return;
+}
+
+if (Rank !== "∞" && L !== 0||Rank !== "∞" && M !== 0||Rank !== "∞" && N !== 0) {
+  error("ありえない状態です");
   return;
 }
 
 if (((300-(2*C))/300)*num1*num2*num19*num6*num7*num8*num9*num10*num11*num17 >= 255 || num2 === 255) {
- result=100.00;
+  result=100.00;
 }else{
- result=(1-(1-(65535-(65536-(((300-(2*C))/300)*num1*num2*num19*num6*num7*num8*num9*num10*num11*num17+1)**2))/65536)**3)*100+num14;
+  result=(1-(1-(65535-(65536-(((300-(2*C))/300)*num1*num2*num19*num6*num7*num8*num9*num10*num11*num17+1)**2))/65536)**3)*100+num14;
 }
 
 document.getElementById("result").textContent = `捕獲率[%]：${result.toFixed(2)}`;
@@ -1514,6 +1517,7 @@ document.getElementById("result").textContent = `捕獲率[%]：${result.toFixed
 
 </body>
 </html>
+
 
 
 
