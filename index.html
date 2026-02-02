@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<p>・ポケモン名　　　　：<input list="A-list" id="A">
+<div>・ポケモン名　　　　：<input list="A-list" id="A">
 <datalist id="A-list">
 <option value="チコリータ">
 <option value="ベイリーフ">
@@ -373,8 +373,8 @@
 <option value="マギアナ">
 <option value="ゼラオラ">
  </datalist>
-</p>
-<p>・ボール名　　　※１： <select id="B">
+</div>
+<div>・ボール名　　　※１： <select id="B">
     <option value="モンスターボール">モンスターボール</option>
     <option value="スーパーボール">スーパーボール</option>
     <option value="ハイパーボール">ハイパーボール</option>
@@ -401,10 +401,10 @@
     <option value="サファリボール">サファリボール</option>
     <option value="コンペボール">コンペボール</option>
  </select>
-</p>
-<p>・残りHP割合［%］　 ：<input id="C" type="number" min="0" max="100" value="0">
-</p>
-<p>・ZAランク　　　　　：<select id="D">
+</div>
+<div>・残りHP割合［%］　 ：<input id="C" type="number" min="0" max="100" value="0">
+</div>
+<div>・ZAランク　　　　　：<select id="D">
     <option value="∞">∞</option>
     <option value="A">A</option>
     <option value="B">B</option>
@@ -418,10 +418,10 @@
     <option value="Y">Y</option>
     <option value="Z">Z</option>
  </select>
-</p>
-<p>・相手のLv　　　　　：<input id="E" type="number" min="1" max="100" value="50">
-</p>
-<p>・状態異常　　　　　：<select id="F">
+</div>
+<div>・相手のLv　　　　　：<input id="E" type="number" min="1" max="100" value="50">
+</div>
+<div>・状態異常　　　　　：<select id="F">
     <option value="きぜつ">きぜつ</option>
     <option value="なし">なし</option>
     <option value="どく">どく</option>
@@ -430,36 +430,36 @@
     <option value="ねむり">ねむり</option>
     <option value="こおり">こおり</option>
  </select>
-</p>
-<p>・色違い　　　　　　：<select id="G">
+</div>
+<div>・色違い　　　　　　：<select id="G">
     <option value="いいえ">いいえ</option>
     <option value="はい">はい</option>
  </select>
-</p>
+</div>
 
-<p>・不意打ち　　　　　：<select id="H">
+<div>・不意打ち　　　　　：<select id="H">
     <option value="いいえ">いいえ</option>
     <option value="はい">はい</option>
  </select>
-</p>
-<p>・背面取り　　　　　：<select id="I">
+</div>
+<div>・背面取り　　　　　：<select id="I">
     <option value="いいえ">いいえ</option>
     <option value="はい">はい</option>
  </select>
-</p>
-<p>・オヤブン　　　　　：<select id="J">
+</div>
+<div>・オヤブン　　　　　：<select id="J">
     <option value="いいえ">いいえ</option>
     <option value="はい">はい</option>
  </select>
-</p>
-<p>・カナリィぬい［個］  ：<select id="K">
+</div>
+<div>・カナリィぬい［個］  ：<select id="K">
     <option value="3">3</option>
     <option value="2">2</option>
     <option value="1">1</option>
     <option value="0">0</option>
  </select>
-</p>
-<p>・異次元の星の数　※２：<select id="L">
+</div>
+<div>・異次元の星の数　※２：<select id="L">
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -467,8 +467,8 @@
     <option value="4">4</option>
     <option value="5">5</option>
  </select>
-</p>
-<p>・ドーナツの星の数※２：<select id="M">
+</div>
+<div>・ドーナツの星の数※２：<select id="M">
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -476,24 +476,24 @@
     <option value="4">4</option>
     <option value="5">5</option>
  </select>
-</p>
-<p>・捕獲パワー［Lv］※２：<select id="N">
+</div>
+<div>・捕獲パワー［Lv］※２：<select id="N">
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
  </select>
-</p>
-<p>・自分のLv(レベルボール用)：<input id="O" type="number" min="1" max="100" value="100">
-</p>
-<p>・ターン(タイマーボール用)：<input id="P" type="number" min="0" max="31" value="0">
-</p>
-<p>　</p>
-<p>※１ 条件付きで捕獲補正率の変動するボールは、条件が満たされているものとして計算する。</p>
-<p>　　 条件が満たされていないボールを使う際は、一律でモンスターボールを選択する。</p>
-<p>※２ 通常ミアレでは0を入力する。</p>
+</div>
+<div>・自分のLv(レベルボール用)：<input id="O" type="number" min="1" max="100" value="100">
+</div>
+<div>・ターン(タイマーボール用)：<input id="P" type="number" min="0" max="31" value="0">
+</div>
+<div>　</div>
+<div>※１ 条件付きで捕獲補正率の変動するボールは、条件が満たされているものとして計算する。</div>
+<div>　　 条件が満たされていないボールを使う際は、一律でモンスターボールを選択する。</div>
+<div>※２ 通常ミアレでは0を入力する。</div>
 <button onclick="calc()">計算</button>
-<p id="result"></p>
+<div id="result"></div>
 
 <script>
 function toHalfWidth(str) {
@@ -1517,6 +1517,7 @@ document.getElementById("result").textContent = `捕獲率[%]：${result.toFixed
 
 </body>
 </html>
+
 
 
 
