@@ -429,7 +429,7 @@
     <option value="Z">Z</option>
  </select>
 </div>
-<div>・相手のLv　　　　　：<input id="E" type="number" min="1" max="100" value="50">
+<div>・相手のLv　　　　　：<input id="E" type="number" min="1" max="200" value="50">
 </div>
 <div>・状態異常　　　　　：<select id="F">
     <option value="きぜつ">きぜつ</option>
@@ -493,7 +493,7 @@
     <option value="3">3</option>
  </select>
 </div>
-<div>・自分のLv(レベルボール用)：<input id="O" type="number" min="1" max="100" value="100">
+<div>・自分のLv(レベルボール用)：<input id="O" type="number" min="1" max="200" value="100">
 </div>
 <div>・ターン(クイック、タイマーボール用)：<input id="P" type="number" min="0" max="31" value="0">
 </div>
@@ -1333,7 +1333,7 @@ net = Q.includes(inputA) ? 3.5 : 1;
 let inputE = document.getElementById("E").value;
 inputE = toHalfWidth(inputE);
 const E = Number(inputE);
-if (!Number.isInteger(E) || E < 1 || E > 100) {
+if (!Number.isInteger(E) || E < 1 || E > 200) {
   error("対応していない数値が入力されました");
   return;
 }
@@ -1424,7 +1424,7 @@ speed = R.includes(inputA) ? 4 : 1;
 let inputO = document.getElementById("O").value || "1";
 inputO = toHalfWidth(inputO);
 const O = Number(inputO);
-if (!Number.isInteger(O) || O < 1 || O > 100) {
+if (!Number.isInteger(O) || O < 1 || O > 200) {
   error("対応していない数値が入力されました");
   return;
 }
