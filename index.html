@@ -1,13 +1,97 @@
-<!DOCTYPE html>
-<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ポケモンレジェンズZ-A 捕獲率計算機</title>
+<style>
+
+body{
+    background:#f5f7fb;
+    font-family:"Yu Gothic",sans-serif;
+    padding:20px;
+}
+.container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+}
+h1{
+    text-align:center;
+    color:#2a75bb;
+    margin-bottom:30px;
+}
+.form-row{
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  gap:12px;
+  margin-bottom:12px;
+}
+.form-row label{
+  width:170px;
+  text-align:right;
+  line-height:1.2;
+}
+.sub-label{
+  font-size:11px;
+  color:#666;
+}
+.form-row input,
+.form-row select{
+  width:180px;
+}
+.button-area{
+  text-align:center;
+  margin-top:24px;
+}
+button{
+  background:#4f7cff;
+  color:white;
+  border:none;
+  border-radius:999px;
+  padding:12px 40px;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+}
+button:hover{
+  background:#3a68e0;
+  transform:translateY(-1px);
+}
+#result{
+    margin-top:20px;
+    background:#fff6cf;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    font-size:24px;
+    font-weight:bold;
+}
+.note{
+    margin-top:20px;
+    color:#666;
+    font-size:14px;
+    line-height:1.7;
+}
+@media(max-width:700px){
+    .form-row{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
 </head>
 <body>
 
-<div>・ポケモン名　　　　：<input list="A-list" id="A">
+<div class="container">
+<h1>ポケモンレジェンズZ-A<br>
+捕獲率計算機</h1>
+<div class="form-row">
+    <label for="A">ポケモン名</label>
+    <input list="A-list" id="A">
+</div>
 <datalist id="A-list">
 <option value="チコリータ">
 <option value="ベイリーフ">
@@ -382,9 +466,11 @@
 <option value="レックウザ">
 <option value="マギアナ">
 <option value="ゼラオラ">
- </datalist>
-</div>
-<div>・ボール名　　　※１：<select id="B">
+</datalist>
+
+<div class="form-row">
+    <label for="B">ボール名</label>
+    <select id="B">
     <option value="モンスターボール">モンスターボール</option>
     <option value="スーパーボール">スーパーボール</option>
     <option value="ハイパーボール">ハイパーボール</option>
@@ -412,9 +498,15 @@
     <option value="コンペボール">コンペボール</option>
  </select>
 </div>
-<div>・残りHP割合［%］　 ：<input id="C" type="number" min="0" max="100" value="0">
+
+<div class="form-row">
+    <label for="C">残りHP割合 [%]</label>
+    <input id="C" type="number" min="0" max="100" value="0">
 </div>
-<div>・ZAランク　　　　　：<select id="D">
+
+<div class="form-row">
+    <label for="D">ZAランク</label>
+    <select id="D">
     <option value="∞">∞</option>
     <option value="A">A</option>
     <option value="B">B</option>
@@ -429,9 +521,15 @@
     <option value="Z">Z</option>
  </select>
 </div>
-<div>・相手のLv　　　　　：<input id="E" type="number" min="1" max="200" value="50">
+
+<div class="form-row">
+    <label for="E">相手のLv</label>
+    <input id="E" type="number" min="1" max="200" value="50">
 </div>
-<div>・状態異常　　　　　：<select id="F">
+
+<div class="form-row">
+    <label for="F">状態異常</label>
+    <select id="F">
     <option value="きぜつ">きぜつ</option>
     <option value="なし">なし</option>
     <option value="どく">どく</option>
@@ -441,34 +539,52 @@
     <option value="こおり">こおり</option>
  </select>
 </div>
-<div>・色違い　　　　　　：<select id="G">
+
+<div class="form-row">
+    <label for="G">色違い</label>
+    <select id="G">
     <option value="いいえ">いいえ</option>
     <option value="はい">はい</option>
  </select>
 </div>
-<div>・不意打ち　　　　　：<select id="H">
+
+<div class="form-row">
+    <label for="H">不意打ち</label>
+    <select id="H">
     <option value="いいえ">いいえ</option>
     <option value="はい">はい</option>
  </select>
 </div>
-<div>・背面取り　　　　　：<select id="I">
+
+<div class="form-row">
+    <label for="I">背面取り</label>
+    <select id="I">
     <option value="いいえ">いいえ</option>
     <option value="はい">はい</option>
  </select>
 </div>
-<div>・オヤブン　　　　　：<select id="J">
+
+<div class="form-row">
+    <label for="J">オヤブン</label>
+    <select id="J">
     <option value="いいえ">いいえ</option>
     <option value="はい">はい</option>
  </select>
 </div>
-<div>・カナリィぬい［個］  ：<select id="K">
+
+<div class="form-row">
+    <label for="K">カナリィぬい [個]</label>
+    <select id="K">
     <option value="3">3</option>
     <option value="2">2</option>
     <option value="1">1</option>
     <option value="0">0</option>
  </select>
 </div>
-<div>・異次元の星の数　※２：<select id="L">
+
+<div class="form-row">
+    <label for="L">異次元の星の数</label>
+    <select id="L">
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -477,7 +593,10 @@
     <option value="5">5</option>
  </select>
 </div>
-<div>・ドーナツの星の数※２：<select id="M">
+
+<div class="form-row">
+    <label for="M">ドーナツの星の数</label>
+    <select id="M">
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -486,23 +605,39 @@
     <option value="5">5</option>
  </select>
 </div>
-<div>・捕獲パワー［Lv］※２：<select id="N">
+
+<div class="form-row">
+    <label for="N">捕獲パワー Lv</label>
+    <select id="N">
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
  </select>
 </div>
-<div>・自分のLv(レベルボール用)：<input id="O" type="number" min="1" max="200" value="100">
+
+<div class="form-row">
+    <label for="O">自分のLv<br>
+  <span class="sub-label">(レベルボール用)</span></label>
+    <input id="O" type="number" min="1" max="200" value="100">
 </div>
-<div>・ターン(クイック、タイマーボール用)：<input id="P" type="number" min="0" max="31" value="0">
+
+<div class="form-row">
+    <label for="P">ターン数<br>
+  <span class="sub-label">(クイックorタイマー用)</span></label>
+    <input id="P" type="number" min="0" max="31" value="0">
 </div>
-<div>　</div>
-<div>※１ ダイブ(ルアー)、ダーク、リピート、ラブラブボールは条件が満たされているものとして計算する。</div>
-<div>条件が満たされていない状況で使う際は、一律でモンスターボールを選択する。</div>
-<div>※２ 通常ミアレでは0を入力する。</div>
+
+<div class="note">
+※1 ダイブ、ルアー、ダーク、リピート、ラブラブボールは捕捉率が上がる条件が満たされているものとして計算する。<br>
+これらのボールを条件を満たさず使う場合は、モンスターボールと同じ捕捉率であるため、そちらで計算する。<br>
+※2 通常ミアレでは異次元ミアレ関連の数値は0を入力する。</div>
+
+<div class="button-area">
 <button onclick="calc()">計算</button>
+</div>
 <div id="result"></div>
+</div>
 
 <script>
 function toHalfWidth(str) {
@@ -1680,8 +1815,6 @@ document.getElementById("result").textContent = `捕獲率[%]：${result.toFixed
 };
 
 </script>
-
+</div>
 </body>
 </html>
-
-
